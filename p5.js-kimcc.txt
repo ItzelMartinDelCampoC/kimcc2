@@ -16,7 +16,7 @@ function setup() {
 function draw() {
   //ackground(220);
   noStroke();
-  fill(random(110, 240), random(16, 100), random(78,255),90);
+  fill(random(10, 90), random(50, 100), random(170,220),90);
   triangle(x1, y1, x2, y2, x3, y3);
   fill(255);
   textAlign(CENTER, CENTER);
