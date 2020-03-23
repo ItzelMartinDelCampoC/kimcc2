@@ -1,0 +1,41 @@
+let x1 = 30;
+let x2 = 58;
+let x3 = 86;
+let y1 = 75;
+let y2 = 20;
+let y3 = 75;
+let label = "KIMCC"
+let counter = 0;
+
+
+function setup() {
+  createCanvas(400, 400);
+}
+
+
+function draw() {
+  //ackground(220);
+  noStroke();
+  fill(random(110, 240), random(16, 100), random(78,255),90);
+  triangle(x1, y1, x2, y2, x3, y3);
+  fill(255);
+  textAlign(CENTER, CENTER);
+  text(label + counter, x1, y1);  
+
+  
+  x1 = random(0, width);
+  y1 = random(0, width);
+  x2 = random(0, width);
+  y2 = random(0, width);
+  x3 = random(0, width);
+  y3 = random(0, width);
+  counter++;
+  console.log(counter);
+  
+  
+  //d = d + 1;
+  //d += 1; corto
+  //d++; más corto
+  //x = x - 1;
+  //x--; más corto
+}
